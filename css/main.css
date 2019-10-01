@@ -1,0 +1,42 @@
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    width: 50%;
+    height: 50%;
+    line-height: 40px;
+}
+
+.icon {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: .7rem;
+    transition: all .5s;
+}
+
+.icon-facebook {
+    background: #133579;
+    border-radius: 50%;
+}
+
+.icon-instagram {
+    background: #d30909;
+}
+
+.icon :first-child {
+    border-radius: 50%;
+}
+
+.icon:last-child {
+    border-radius: 50%;
+}
+
+.icon :hover {
+    padding: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(12, 12, 12, 0.466);
+}

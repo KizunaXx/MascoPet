@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Cuenta</title>
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cuenta.css">
+    <script src="js/validar.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="title">MascoPet</h1>
+        <div class="container">
+            <div class="navegacion">
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">Inicio <span class="icon icon-up-dir"></span></a></li>
+                        <li><a href="contacto.html">Contacto <span class="icon icon-up-dir"></span></a></li>
+                        <li>
+                            <a href="#">Productos <span class="icon icon-up-dir"></span></a>
+                            <div class="submenu">
+                                <div class="submenu-items">
+                                    <p>Alimentos</p>
+                                    <ul>
+                                        <li><a href="alimentosGatos.html">Gato</a></li>
+                                        <li><a href="#">Perro</a></li>
+                                        <li><a href="#">Ave</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu-items">
+                                    <p>Accesorios</p>
+                                    <ul>
+                                        <li><a href="#">Gato</a></li>
+                                        <li><a href="#">Perro</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li><a href="cuenta.html">Mi cuenta <span class="icon icon-up-dir"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row betweem-xs">
+                <div class="col-xs-12 col-sm-12">
+                    <img class="imagen" src="img/Imagen_formulario.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <h1>Crea una cuenta</h1>
+            </div>
+
+            <hr>
+        </div>
+    </header>
+    <div class="container">
+        <section class="row">
+            <article class="col-xs-12 col-md-6">
+                <form class="iniciarSesion">
+                    <h1 class="form_titulo">Iniciar Sesión</h1>
+                    <input id="usuario1" name="usuario1" type="text" class="form_input" onblur="validarUsuario1()">
+                    <label for="name" class="form_label">Usuario</label>
+
+                    <input id="clave" name="clave" type="text" class="form_input" onblur="validarPass()">
+                    <label for="password" class="form_label">Contraseña</label>
+
+                    <input id="btn" type="submit" class="form_submit" value="Log in" onclick="validar()">
+                </form>
+            </article>
+            <article class="col-xs-12 col-md-6">
+                <form action="" class="formulario">
+                    <h1 class="form_titulo">Regístrate</h1>
+                    <input id="usuario" name="usuario" type="text" class="form_input" minlength="3" maxlength="10" onblur="validarUsuario2()">
+                    <label for="name" class="form_label">Usuario</label>
+
+                    <input id="email" name="email" type="text" class="form_input" onblur="validarEmail()">
+                    <label for="email" class="form_label">email</label>
+
+                    <input id="clave" name="clave" type="password" class="form_input" onblur="validarPasswd();">
+                    <label for="pass1" name="pass1" class="form_label">Contraseña</label>
+
+                    <input id="confir_clave" name="confir_clave" type="password" class="form_input" onblur="validarPasswd();">
+                    <label for="pass2" name="pass2" class="form_label">Confirmar Contraseña</label>
+
+                    <input id="btn2" name="btn2" type="submit" class="form_submit" value="Registro" onclick="validar2()">
+                    <p>Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web</p>
+                </form>
+            </article>
+            <script src="js/cuenta.js"></script>
+            <script src="js/validar.js"></script>
+        </section>
+    </div>
+    <div class="container">
+        <footer>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-1">
+                    <h3>MascoPet</h3>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a class="info" href="Terminos.html" style="text-decoration:none">Términos y Condiciones de Compra y Reparto</a><br><br>
+                    <a class="info" href="informacionDeEntrega.html" style="text-decoration:none">Información de entrega</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 ">
+
+                    <span>Correo: maskopet.rv@atencion.cl</span><br>
+                    <span>Telefono: +56 987817765 / 800 800 3000</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
